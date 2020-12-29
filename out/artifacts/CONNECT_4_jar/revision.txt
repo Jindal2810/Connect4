@@ -1,0 +1,11 @@
+*To check whether a no is integer or not 
+//x1,v1,x2,v2 are integers
+ double a=(double)(x1-x2)/(v1-v2);
+        double b=Math.floor(a);
+if(a==b)
+then it no is integer
+
+
+
+*Counting sort,insertion sort,quicksort
+quicksort-nlog(n)->minimum running time

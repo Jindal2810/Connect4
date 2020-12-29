@@ -1,0 +1,56 @@
+Method overloading
+* different types of parameter /different no. of parameters
+*Compile time polymorphism
+*only different return type and same no. and type of paramters cause ambiguity and results in compile time error
+*implicitly convert lower data type into higher(Type promotion) but vice versa not true
+
+
+Metthod Overriding
+*Same return type or covariant return type
+*specific impementation of bse class method in parent class
+*Runtime polymorphism
+*Cannot override static method(becoz bound to class not objects)
+
+Super keyword
+*Base class constructor automatically called by compiler if missing in child class constructor
+
+Instance initialiser block
+*it seems that instance initializer block is firstly invoked but NO. Instance intializer block is invoked at the time of object creation. The java compiler copies the instance initializer block in the constructor after the first statement super(). So firstly, constructor is invoked.
+
+There are mainly three rules for the instance initializer block. They are as follows:
+The instance initializer block is created when instance of the class is created.
+The instance initializer block is invoked after the parent class constructor is invoked (i.e. after super() constructor call).
+The instance initializer block comes in the order in which they appear.
+
+
+Final keyword
+*The final keyword in java is used to restrict the user. The java final keyword can be used in many context. Final can be:
+
+variable
+method
+class
+The final keyword can be applied with the variables, a final variable that have no value it is called blank final variable or uninitialized final variable. It can be initialized in the constructor only. The blank final variable can be static also which will be initialized in the static block only.
+
+1) Java final variable
+If you make any variable as final, you cannot change the value of final variable(It will be constant).
+2) Java final method
+If you make any method as final, you cannot override it.
+3) Java final class
+If you make any class as final, you cannot extend it
+
+Q) Is final method inherited?
+Ans) Yes, final method is inherited but you cannot override it.
+Q) Can we declare a constructor final?
+No, because constructor is never inherited.
+
+
+Runtime polymorphism-single action into many forms
+*Runtime polymorphism or Dynamic Method Dispatch is a process in which a call to an overridden method is resolved at runtime rather than compile-time.
+
+In this process, an overridden method is called through the reference variable of a superclass. The determination of the method to be called is based on the object being referred to by the reference variable.
+
+Let's first understand the upcasting before Runtime Polymorphism.
+
+Upcasting
+If the reference variable of Parent class refers to the object of Child class, it is known as upcasting
+The final keyword can be applied with the variables, a final variable that have no value it is called blank final variable or uninitialized final variable. It can be initialized in the constructor only. The blank final variable can be static also which will be initialized in the static block only. We will have detailed learning of these.

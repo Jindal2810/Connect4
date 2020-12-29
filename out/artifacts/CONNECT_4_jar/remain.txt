@@ -1,0 +1,40 @@
+ public static void Median(List<Integer> s){
+        Collections.sort(s);
+        if(s.size()%2==0){
+            
+           // System.out.format("%1f",m);
+            float m=(float)(s.get(s.size()/2)+s.get(s.size()/2-1))/2;
+            if((s.get(s.size()/2)+s.get(s.size()/2-1))%2==0){
+            System.out.format("%1f",m);
+            System.out.println();}
+            else
+            m=(float)Math.floor(m);
+            System.out.println(m);
+        }
+        else
+System.out.println(s.get(s.size()/2-1));
+return;
+    }
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scan=new Scanner(System.in);
+        List<Integer> list=new ArrayList<>();
+        int N=scan.nextInt();
+        for(int i=0;i<N;i++){
+            String[] s=scan.nextLine().split(" ");
+            int n=Integer.parseInt(s[1]);
+            if(s[0].equals("a")){
+list.add(n);
+Median(list);
+            }
+            else{
+            if(list.size()!=0&&!list.contains(n))
+System.out.println("Wrong!");
+else
+list.remove(n);
+Median(list);
+        }
+    }
+    return;
+    }
